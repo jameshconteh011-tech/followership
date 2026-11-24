@@ -1,0 +1,222 @@
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #102a43;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h2 {
+    color: #f1c40f;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+/* HOME SECTION */
+.hero {
+    min-height: 450px;
+    background: linear-gradient(
+        rgba(16, 42, 67, 0.85),
+        rgba(16, 42, 67, 0.85)
+    ),
+    url("https://images.unsplash.com/photo-1438032005730-c779502df39b")
+    center/cover;
+
+    color: white;
+    text-align: center;
+    padding: 130px 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.button {
+    background-color: #f1c40f;
+    color: #102a43;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* GENERAL SECTIONS */
+section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #102a43;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+#about p {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* DEPARTMENT CARDS */
+.department-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.department-card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.department-card:hover {
+    transform: translateY(-5px);
+}
+
+.department-card h3 {
+    color: #102a43;
+    margin-bottom: 12px;
+}
+
+/* SCRIPTURE */
+.scripture-box {
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+    background-color: #102a43;
+    color: white;
+    border-radius: 10px;
+}
+
+.scripture-box h3 {
+    color: #f1c40f;
+    margin-bottom: 15px;
+}
+
+/* REGISTRATION FORM */
+#memberForm {
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+#memberForm input,
+#memberForm select {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#memberForm button {
+    width: 100%;
+    padding: 14px;
+    background-color: #102a43;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#memberForm button:hover {
+    background-color: #1d496d;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* ADMIN SECTION */
+#admin {
+    background-color: #eaf0f6;
+}
+
+/* FOOTER */
+footer {
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 100px 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .department-container {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 45px 5%;
+    }
+}
